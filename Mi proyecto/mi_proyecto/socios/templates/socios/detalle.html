@@ -1,0 +1,13 @@
+{% extends 'socios/base.html' %}
+
+{% block content %}
+<h2>{{ organizacion.nombre }}</h2>
+
+<p><strong>Tipo:</strong> {{ organizacion.get_tipo_display }}</p>
+<p><strong>Dirección:</strong> {{ organizacion.direccion }}</p>
+<p><strong>Contacto:</strong> {{ organizacion.contacto }}</p>
+<p><strong>Descripción:</strong> {{ organizacion.descripcion }}</p>
+
+<a href="/">Volver</a>
+
+{% endblock %}

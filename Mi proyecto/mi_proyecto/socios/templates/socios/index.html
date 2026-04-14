@@ -1,0 +1,16 @@
+{% extends 'socios/base.html' %}
+
+{% block content %}
+<h2>Lista de Organizaciones</h2>
+
+<ul>
+    {% for o in organizaciones %}
+        <li>
+            <a href="{% url 'detalle' o.id %}">
+                {{ o.nombre }}
+            </a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
